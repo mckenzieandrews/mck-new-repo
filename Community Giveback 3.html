@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page3</title>
+        <meta name="website" content="An interactive website for people who want to giveback.">
+        <link rel="stylesheet" href="main.css">
+    
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+          <style>
+            
+            h1 {
+                font-family: Noto Sans, sans-serif; 
+                font-weight: 100;
+                
+            }
+              
+              h3 {
+                font-family: Noto Sans, sans-serif; 
+                font-weight: 100;
+                
+            }
+              
+              .dropbtn {
+    background-color: #D3D3D3;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #A9A9A9;
+}
+              
+              
+        </style>
+        
+        
+    </head>
+    
+    <body>
+        
+        <div class="dropdown" style="float: right;">
+  <button class="dropbtn">| | |</button>
+  <div class="dropdown-content">
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+    <a href="#">Our Progress</a>
+  </div>
+</div>
+        
+        <br>
+        <br>
+        
+        
+        <center>
+
+<h1> Organizations near you in</h1>
+            
+            <h3>
+            
+               Chelsea, Manhattan
+            
+            </h3>
+            
+            </center>
+        <br>
+        
+
+<div id="googleMap" style="width:100%;height:550px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(40.742352, -74.006210),
+    zoom:15,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?AIzaSyBD7rBFHI0gF7Kl7Rz4ssMiuFUX2VEaHXA=AIzaSyBD7rBFHI0gF7Kl7Rz4ssMiuFUX2VEaHXA&callback=myMap"></script>
+        
+    
+    
+    </body>
+    
+    
+</html>
